@@ -50,7 +50,7 @@ if (isset($_POST['simpan'])) {
   <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
-        <?php if ($alert != '') {
+        <?php if ($alert != ''){
     echo $alert; }  ?>  
   <div class="card">
         <form action="" method="post" enctype="multipart/form-data">
@@ -66,7 +66,7 @@ if (isset($_POST['simpan'])) {
               <div class="col-lg-8 mb-3">
                 <div class="form-group">
                   <label for="kode">Kode</label>
-                  <input type="text" name="kode" id="kode" class="form-control" value="<?php echo generateId() ?>" readonly>
+                  <input type="text" name="kode" id="kode" class="form-control" value="<?php echo generateId(); ?>" readonly>
                 </div>
                 <div class="form-group">
                   <label for="barcode">Barcode *</label>
